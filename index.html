@@ -26,6 +26,7 @@
             border-radius: 50%;
             width: 120px;
             height: 120px;
+            object-fit: cover;
             margin-right: 1.5rem;
         }
         h1 {
@@ -39,23 +40,30 @@
             border-bottom: 2px solid #eee;
             padding-bottom: 0.25rem;
         }
+        .publication {
+            display: flex;
+            margin-top: 1rem;
+        }
         .publication img {
             width: 200px;
-            margin-top: 0.5rem;
-        }
-        .pub-text {
-            margin-left: 220px;
-            margin-top: -200px;
-        }
-        .contact-icons span {
+            height: auto;
             margin-right: 1rem;
+        }
+        .publication .pub-text {
+            flex: 1;
+        }
+        ul {
+            padding-left: 1.2em;
+        }
+        li {
+            margin-bottom: 0.5rem;
         }
     </style>
 </head>
 <body>
     <div class="container">
         <header>
-            <img src="https://via.placeholder.com/120" alt="Profile Picture">
+            <img src="profile.jpg" alt="Profile Picture">
             <div>
                 <h1>Shaohao Rui</h1>
                 <p>Ph.D. student at Shanghai Jiao Tong University, Shanghai AI Laboratory and Shanghai Innovation Institute, advised by Prof. Xiaosong Wang.</p>
@@ -71,17 +79,19 @@
         <section>
             <h2>🔥 News</h2>
             <ul>
-                <li><strong>2025.02:</strong> One first author and two co-authered papers submitted to MICCAI2025, hope good luck!</li>
-                <li><strong>2025.02:</strong> 🎉🎉🎉 One first author work "Multi-modal Vision Pre-training for Medical Image Analysis" is accepted by CVPR 2025 as Highlight.</li>
+                <li><strong>2025.02:</strong> One first author and two co-authored papers submitted to MICCAI 2025 — hope for good luck!</li>
+                <li><strong>2025.02:</strong> 🎉🎉🎉 One first author work <strong>"Multi-modal Vision Pre-training for Medical Image Analysis"</strong> is accepted by CVPR 2025 as Highlight.</li>
             </ul>
         </section>
 
         <section>
             <h2>📄 Publications</h2>
             <div class="publication">
-                <img src="https://via.placeholder.com/200x150?text=CVPR+2025" alt="Paper image">
+                <img src="cvpr2025.png" alt="Paper image">
                 <div class="pub-text">
-                    <p><a href="#">Multi-modal Vision Pre-training for Medical Image Analysis, Shaohao Rui, Lingzhi Chen, Zhenyu Tang, Lilong Wang, Mianxin Liu, Shaoting Zhang, Xiaosong Wang <strong>CVPR 2025(Highlight)</strong></p>
+                    <p><strong><a href="#">Multi-modal Vision Pre-training for Medical Image Analysis</a></strong><br>
+                    Shaohao Rui, Lingzhi Chen, Zhenyu Tang, Lilong Wang, Mianxin Liu, Shaoting Zhang, Xiaosong Wang<br>
+                    <strong>CVPR 2025 (Highlight)</strong></p>
                 </div>
             </div>
         </section>
@@ -89,7 +99,7 @@
         <section>
             <h2>💼 Internships</h2>
             <ul>
-                <li><strong>2023.09 - </strong>, Shanghai AI Laboratory, Shanghai, China</li>
+                <li><strong>2023.09 -</strong> Shanghai AI Laboratory, Shanghai, China</li>
             </ul>
         </section>
     </div>
